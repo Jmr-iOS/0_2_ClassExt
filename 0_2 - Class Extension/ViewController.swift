@@ -21,6 +21,7 @@
 /************************************************************************************************************************************/
 import UIKit
 
+
 class ViewController: UIViewController {
 
     
@@ -31,6 +32,20 @@ class ViewController: UIViewController {
 
         optDemo_addButton(self.view);
         makeAMonsterousLabel(self.view);
+
+        //print on construction
+        let jmr = ParentClass(name: "Jill");
+        let hap = ChildClass(name: "Sarah");
+        
+        
+        //print on parent class call
+        _ = ParentClass.init(name: "James");
+        
+        //print on routine call
+        print(jmr.greet(person: "Justin"));
+        print(hap.greet(person: "Mark"));
+        print(hap.shout(person: "Sam"));
+        
         
         print("ViewController.viewDidLoad():       viewDidLoad() complete");
         
