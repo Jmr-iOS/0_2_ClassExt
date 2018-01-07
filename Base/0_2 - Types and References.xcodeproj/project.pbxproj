@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D0AF66052002E95400940C2C /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D0AF66022002E95400940C2C /* Base.lproj */; };
 		D0AF66062002E95400940C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AF66032002E95400940C2C /* Assets.xcassets */; };
-		D0AF66072002E95400940C2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AF66042002E95400940C2C /* Info.plist */; };
 		D0AF660C2002E96600940C2C /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF66082002E96600940C2C /* ParentClass.swift */; };
 		D0AF660D2002E96600940C2C /* ChildClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF66092002E96600940C2C /* ChildClass.swift */; };
 		D0AF660E2002E96600940C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF660A2002E96600940C2C /* AppDelegate.swift */; };
@@ -104,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Jaostech;
 				TargetAttributes = {
 					D039B4B51BF4D7950024005F = {
@@ -140,7 +139,6 @@
 				D0AF66062002E95400940C2C /* Assets.xcassets in Resources */,
 				D0AF66052002E95400940C2C /* Base.lproj in Resources */,
 				D0AF66132002E97200940C2C /* Empty.storyboard in Resources */,
-				D0AF66072002E95400940C2C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -253,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

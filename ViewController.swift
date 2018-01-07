@@ -25,6 +25,12 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    /********************************************************************************************************************************/
+    /** @fcn        viewDidLoad()
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     override func viewDidLoad() {
         super.viewDidLoad();
         
@@ -54,25 +60,29 @@ class ViewController: UIViewController {
                                                          selector: #selector(UIApplicationDelegate.applicationWillResignActive(_:)),
                                                          name: NSNotification.Name.UIApplicationWillResignActive,
                                                          object: nil);
-    
         return;
     }
 
-
-    @objc func applicationWillResignActive(_ notification: Notification) {
+    
+    /********************************************************************************************************************************/
+    /** @fcn        applicationWillResignActive(_ notification: Notification)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
+    func applicationWillResignActive(_ notification: Notification) {
         print("I'm out of focus, home was pressed!");
         return;
     }
 
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning();
-
-        return;
-    }
-
-    
-    @objc func optDemo_addButton(_ view:UIView) {
+    /********************************************************************************************************************************/
+    /** @fcn        optDemo_addButton(_ view:UIView)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
+    func optDemo_addButton(_ view:UIView) {
         
         let button      : UIButton  = UIButton(type: UIButtonType.system) as UIButton;
         let buttonWidth : CGFloat   = 300;
@@ -92,9 +102,15 @@ class ViewController: UIViewController {
         
         return;
     }
-    
 
-    @objc func makeAMonsterousLabel(_ view:UIView) {
+    
+    /********************************************************************************************************************************/
+    /** @fcn        func makeAMonsterousLabel(_ view:UIView)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
+    func makeAMonsterousLabel(_ view:UIView) {
         
         let myFirstLabel  = UILabel();
 
@@ -115,26 +131,33 @@ class ViewController: UIViewController {
 
         return;
     }
+
     
-    
-/*    func pressed(sender: UIButton!) {
-        let alertView = UIAlertView();
-        alertView.addButtonWithTitle("Ok");
-        alertView.title = "title";
-        alertView.message = "message";
-        alertView.show();
-        
-        return;
-    }
-*/
-    
+    /********************************************************************************************************************************/
+    /** @fcn        myButton_response(_ sender: UIButton!)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     @objc func myButton_response(_ sender: UIButton!) {
 
         print("Button Response fired. Game on!");
         
         return;
     }
+    
+    
+    /********************************************************************************************************************************/
+    /** @fcn        didReceiveMemoryWarning()
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning();
+        
+        return;
+    }
 }
-
 
 

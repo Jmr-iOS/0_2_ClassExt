@@ -4,11 +4,6 @@
  *  @brief      show class extension in Swift
  *  @details    x
  *
- *  @author     Justin Reina, Firmware Engineer, Jaostech
- *  @created    11/06/17
- *  @last rev   x
- *
- *
  *  @notes      x
  *
  *  @section    Opens
@@ -24,6 +19,12 @@ import UIKit
 
 class ChildClass: ParentClass {
     
+    /********************************************************************************************************************************/
+    /** @fcn        init(name:String)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     override init(name:String) {
         super.init(name: name);
 
@@ -32,6 +33,12 @@ class ChildClass: ParentClass {
         return;
     }
     
+    /********************************************************************************************************************************/
+    /** @fcn        shout(person: String) -> String
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     func shout(person: String) -> String {
         let greeting = "Hey " + person + "!";
         return greeting;

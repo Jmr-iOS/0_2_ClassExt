@@ -4,11 +4,6 @@
  * 	@brief		x
  * 	@details	x
  *
- * 	@author		Justin Reina, Firmware Engineer, Jaostech
- * 	@created	11/12/15
- * 	@last rev	x
- *
- *
  * 	@notes		x
  *
  * 	@section	Opens
@@ -28,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?;
 
 
+    /********************************************************************************************************************************/
+    /** @fcn        application(didFinishLaunchingWithOptions)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds);

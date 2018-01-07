@@ -4,12 +4,11 @@
  *  @brief      show class extension in Swift
  *  @details    x
  *
- *  @author     Justin Reina, Firmware Engineer, Jaostech
- *  @created    11/06/17
- *  @last rev   x
- *
- *
  *  @notes      x
+ *
+ *  @section    Reference
+ *      https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//
+ *      apple_ref/doc/uid/TP40014097-CH10-ID158
  *
  *  @section    Opens
  *      none current
@@ -22,10 +21,14 @@
 import UIKit
 
 
-//@ref  https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//
-//      apple_ref/doc/uid/TP40014097-CH10-ID158
 class ParentClass: NSObject {
     
+    /********************************************************************************************************************************/
+    /** @fcn        init(name:String)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     init(name:String) {
         super.init();
 
@@ -34,6 +37,13 @@ class ParentClass: NSObject {
         return;
     }
     
+    
+    /********************************************************************************************************************************/
+    /** @fcn        greet(person: String) -> String
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     func greet(person: String) -> String {
         let greeting = "Hello " + person + ".";
         return greeting;
