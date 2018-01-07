@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D039B4B51BF4D7950024005F"
-               BuildableName = "0_2 - Class Extension.app"
-               BlueprintName = "0_2 - Class Extension"
-               ReferencedContainer = "container:0_2 - Class Extension.xcodeproj">
+               BuildableName = "0_2 - Types and References.app"
+               BlueprintName = "0_2 - Types and References"
+               ReferencedContainer = "container:0_2 - Types and References.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D039B4B51BF4D7950024005F"
-            BuildableName = "0_2 - Class Extension.app"
-            BlueprintName = "0_2 - Class Extension"
-            ReferencedContainer = "container:0_2 - Class Extension.xcodeproj">
+            BuildableName = "0_2 - Types and References.app"
+            BlueprintName = "0_2 - Types and References"
+            ReferencedContainer = "container:0_2 - Types and References.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D039B4B51BF4D7950024005F"
-            BuildableName = "0_2 - Class Extension.app"
-            BlueprintName = "0_2 - Class Extension"
-            ReferencedContainer = "container:0_2 - Class Extension.xcodeproj">
+            BuildableName = "0_2 - Types and References.app"
+            BlueprintName = "0_2 - Types and References"
+            ReferencedContainer = "container:0_2 - Types and References.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D039B4B51BF4D7950024005F"
-            BuildableName = "0_2 - Class Extension.app"
-            BlueprintName = "0_2 - Class Extension"
-            ReferencedContainer = "container:0_2 - Class Extension.xcodeproj">
+            BuildableName = "0_2 - Types and References.app"
+            BlueprintName = "0_2 - Types and References"
+            ReferencedContainer = "container:0_2 - Types and References.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
