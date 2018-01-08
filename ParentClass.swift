@@ -32,7 +32,7 @@ class ParentClass: NSObject {
     init(name:String) {
         super.init();
 
-        print(greet(person: name));                       /* Prints "Hello, 'name'!"                                                */
+        print("ParentClass.init():                 \(greet(person: name))");      /* Prints "Hello, 'name'!"                        */
 
         return;
     }

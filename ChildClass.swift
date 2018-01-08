@@ -28,7 +28,7 @@ class ChildClass: ParentClass {
     override init(name:String) {
         super.init(name: name);
 
-        print("I am also the child...");                       /* Prints a unique message                                           */
+        print("ChildClass:init():                  I am also the child...");    /* Prints a unique message                                  */
 
         return;
     }

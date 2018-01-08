@@ -36,9 +36,28 @@ class ViewController: UIViewController {
         
         self.view.translatesAutoresizingMaskIntoConstraints = false;
 
-        optDemo_addButton(self.view);
-        makeAMonsterousLabel(self.view);
+        
+        demo_subClass();
+                
+        print("ViewController.viewDidLoad():       viewDidLoad() complete");
+        
+        //listen to 'Home' press
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(UIApplicationDelegate.applicationWillResignActive(_:)),
+                                               name: NSNotification.Name.UIApplicationWillResignActive,
+                                               object: nil);
+        return;
+    }
+    
 
+    /********************************************************************************************************************************/
+    /** @fcn        demo_subClass()
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
+    func demo_subClass() {
+        
         //print on construction
         let jmr = ParentClass(name: "Jill");
         let hap = ChildClass(name: "Sarah");
@@ -48,21 +67,15 @@ class ViewController: UIViewController {
         _ = ParentClass.init(name: "James");
         
         //print on routine call
-        print(jmr.greet(person: "Justin"));
-        print(hap.greet(person: "Mark"));
-        print(hap.shout(person: "Sam"));
+        print("ViewController.demo_subClass():     \(jmr.greet(person: "Justin"))");        /* ParentClass call                     */
+        print("ViewController.demo_subClass():     \(hap.greet(person: "Mark"))");          /* ChildClass call                      */
+        print("ViewController.demo_subClass():     \(hap.shout(person: "Sam"))");           /* ParentClass call                     */
+
+        print("ViewController.demo_subClass():     subclass demo complete");
         
-        
-        print("ViewController.viewDidLoad():       viewDidLoad() complete");
-        
-        //listen to 'Home' press
-        NotificationCenter.default.addObserver(self,
-                                                         selector: #selector(UIApplicationDelegate.applicationWillResignActive(_:)),
-                                                         name: NSNotification.Name.UIApplicationWillResignActive,
-                                                         object: nil);
         return;
     }
-
+    
     
     /********************************************************************************************************************************/
     /** @fcn        applicationWillResignActive(_ notification: Notification)
@@ -72,77 +85,6 @@ class ViewController: UIViewController {
     /********************************************************************************************************************************/
     func applicationWillResignActive(_ notification: Notification) {
         print("I'm out of focus, home was pressed!");
-        return;
-    }
-
-
-    /********************************************************************************************************************************/
-    /** @fcn        optDemo_addButton(_ view:UIView)
-     *  @brief      x
-     *  @details    x
-     */
-    /********************************************************************************************************************************/
-    func optDemo_addButton(_ view:UIView) {
-        
-        let button      : UIButton  = UIButton(type: UIButtonType.system) as UIButton;
-        let buttonWidth : CGFloat   = 300;
-        
-        button.frame = CGRect(x: self.view.center.x-(buttonWidth/2), y: 100, width: buttonWidth, height: 50);
-
-        
-        button.backgroundColor = UIColor.green
-        
-        button.setTitle("Test Button", for: UIControlState());
-  
-        button.addTarget(self, action: #selector(ViewController.myButton_response(_:)), for:  .touchUpInside);
-
-        view.addSubview(button);
-        
-        print("ViewController.optDemo_addButton(): Button added");
-        
-        return;
-    }
-
-    
-    /********************************************************************************************************************************/
-    /** @fcn        func makeAMonsterousLabel(_ view:UIView)
-     *  @brief      x
-     *  @details    x
-     */
-    /********************************************************************************************************************************/
-    func makeAMonsterousLabel(_ view:UIView) {
-        
-        let myFirstLabel  = UILabel();
-
-        myFirstLabel.text          = "I made a label on the screen #toogood4you";
-        myFirstLabel.font          = UIFont(name: "MarkerFelt-Thin", size: 45);
-        myFirstLabel.textColor     = UIColor.red;
-        myFirstLabel.textAlignment = .center;
-
-        //text-wrap
-        myFirstLabel.numberOfLines = 0;
-        myFirstLabel.lineBreakMode = .byWordWrapping;
-        
-        myFirstLabel.frame = CGRect(x: (self.view.center.x - 150), y: 200, width: 300, height: 500);
-        
-        myFirstLabel.backgroundColor = UIColor.gray;
-        
-        view.addSubview(myFirstLabel);
-
-        return;
-    }
-
-    
-    /********************************************************************************************************************************/
-    /** @fcn        myButton_response(_ sender: UIButton!)
-     *  @brief      x
-     *  @details    x
-     */
-    /********************************************************************************************************************************/
-    @objc func myButton_response(_ sender: UIButton!) {
-
-        print("Button Response fired. Game on!");
-        
         return;
     }
     
