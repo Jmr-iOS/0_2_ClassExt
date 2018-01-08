@@ -6,10 +6,6 @@
  *
  *  @notes      x
  *
- *  @section    Reference
- *      https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//
- *      apple_ref/doc/uid/TP40014097-CH10-ID158
- *
  *  @section    Opens
  *      none current
  *

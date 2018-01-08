@@ -1,0 +1,15 @@
+@brief 		Reference vs Value Types in Swift - Ray Wenderlich
+@details 	x
+@auth 		Justin Reina
+@date 		1/7/18
+
+@section 	Notes
+	a real emphasis on re-thinking code architecture in Swift
+		heavy preference of value types over reference types
+	quick-and-dirty:
+		value types keep a unique copy of their data			(Multi)
+		reference types share a single copy of their data		(Single!)
+	Comparison:
+		Tradtnl: use references to objects
+		Swift: uses classes which are implemented using reference semantics
+	

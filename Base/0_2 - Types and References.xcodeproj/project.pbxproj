@@ -48,9 +48,9 @@
 			children = (
 				D0AF66002002E94100940C2C /* Base */,
 				D0AF660A2002E96600940C2C /* AppDelegate.swift */,
+				D0AF660B2002E96600940C2C /* ViewController.swift */,
 				D0AF66092002E96600940C2C /* ChildClass.swift */,
 				D0AF66082002E96600940C2C /* ParentClass.swift */,
-				D0AF660B2002E96600940C2C /* ViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
