@@ -14,7 +14,7 @@
  *      apple_ref/doc/uid/TP40014097-CH10-ID158
  *
  * 	@section	Opens
- * 			complete Ray Wenderlich tutorial - Part (2/2) in Doc/ and integrate into project
+ * 			none listed
  *
  * 	@section	Legal Disclaimer
  * 			All contents of this source file and/or any other Jaostech related source files are the explicit property on Jaostech
